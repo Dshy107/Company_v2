@@ -10,7 +10,7 @@ namespace Sandbox
         private int workHouresPrMonth;
         private int payPrHour;
 
-        public Worker(string name, int workHouresPrMonth, int payPrHour) : base(name)
+        public Worker(string name) : base(name)
         {
             this.payPrHour = 200;
             this.workHouresPrMonth = 50;
