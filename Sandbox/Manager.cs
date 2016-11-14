@@ -5,15 +5,14 @@ using System.Text;
 
 namespace Sandbox
 {
-    class Worker : Employee
+    class Manager : Employee
     {
-        private int workHouresPrMonth;
-        private int payPrHour;
+        private int workHoures;
+        private int paidPrHoure;
+        private bool getBonus;
 
-        public Worker(string name, int workHouresPrMonth, int payPrHour) : base(name)
+        public Manager(string name) : base(name)
         {
-            this.payPrHour = 200;
-            this.workHouresPrMonth = 50;
         }
 
         public override int GetBonusPerMonth()
@@ -23,7 +22,7 @@ namespace Sandbox
 
         public override int GetSalaryPerMonth()
         {
-            return payPrHour * workHouresPrMonth;
+            throw new NotImplementedException();
         }
 
         public override bool IsBonusPaidOut()
