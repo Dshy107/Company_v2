@@ -21,6 +21,10 @@ namespace Sandbox
             SeniorManager SM2 = new SeniorManager("Carlos", 5);
             allEmployees.Add(SM);
             allEmployees.Add(SM2);
+            foreach (Employee e in allEmployees)
+            {
+                Console.WriteLine("{0} has a salary of {1} plus a bonus of {2} if they are a manager {3}", e.GetName(), e.GetSalaryPerMonth(), e.GetBonusPerMonth(), e.IsBonusPaidOut());
+            }
             // The LAST line of code should be ABOVE this line
         }
     }

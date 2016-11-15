@@ -18,7 +18,7 @@ namespace Sandbox
 
         public override int GetBonusPerMonth()
         {
-            throw new NotImplementedException();
+            return 0;
         }
 
         public override int GetSalaryPerMonth()
@@ -28,7 +28,7 @@ namespace Sandbox
 
         public override bool IsBonusPaidOut()
         {
-            throw new NotImplementedException();
+            return false;
         }
     }
 }
